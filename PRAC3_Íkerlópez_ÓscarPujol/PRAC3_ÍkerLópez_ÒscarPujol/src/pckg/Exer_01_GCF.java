@@ -13,8 +13,9 @@ public class Exer_01_GCF {
 		for(int i = 0; i<100000; i++){
 			int x = r.nextInt(1, 5001);
 			int y = r.nextInt(1, 5001);
-
-			System.out.println("MCD: "+ MCD( x, y) +" iterativeGCF: "+ iterativeGCF(x,y));
+			if (MCD(x,y) != iterativeGCF(x,y)){
+				System.out.print("Hi ha algun error");
+			}
 		}
 	}
 	
